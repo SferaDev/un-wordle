@@ -1347,7 +1347,7 @@ this.wordle = this.wordle || {},
                             if (i || l)
                                 Va({
                                     isWin: l,
-                                    isStreak: !!this.lastCompletedTs && 1 === Na(new Date(this.lastCompletedTs), new Date),
+                                    isStreak: 1,
                                     numGuesses: this.rowIndex
                                 }),
                                     ja({
