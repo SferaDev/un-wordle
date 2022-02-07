@@ -1146,7 +1146,7 @@ this.wordle = this.wordle || {},
             return Math.round(t / 864e5)
         }
         function Da(e) {
-            var a, s = Math.round(Math.random() * 1000);
+            var a, s = Math.floor(Math.random() * (La.length + 1));
             return a = s % La.length,
                 La[a]
         }
