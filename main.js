@@ -1146,9 +1146,12 @@ this.wordle = this.wordle || {},
             return Math.round(t / 864e5)
         }
         function Da(e) {
-            var a, s = Math.floor(Math.random() * (La.length + 1));
-            return a = s % La.length,
-                La[a]
+            var total = La.length;
+            var random = Math.floor(Math.random() * (La.length + 1));
+            var index = random % La.length;
+            var word = La[index];
+            console.log("You came here for the answer...", { total, index, word });            
+            return word;
         }
         function Ga(e) {
             return Na(Ha, e)
